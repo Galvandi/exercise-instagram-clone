@@ -1,0 +1,276 @@
+/* Base */
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    color: #888;
+    word-spacing: 2px;
+    line-height: 1.4;
+    background-color: #f9f9f9;
+    font-size: 0.8rem;
+}
+
+h1 {
+    font-family: 'Merienda One', serif;
+    font-size: 2.25rem;
+    color: #222;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+
+/* Layout */
+.center {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* Register Form */
+.register h2 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+input {
+    display: block;
+    background-color: #f9f9f9;
+    margin-bottom: 7px;
+    border: 1px solid #ececec;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
+    font-size: 0.65rem;   
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+input:focus {
+    outline: none;
+    border-color: #acacac;
+}
+
+.btn-blue {
+    width: 100%;
+    padding: 7px 0;
+    margin: 5px 0 10px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #3897F0;
+    color: white;
+    font-weight: 700;
+}
+
+.btn-blue:hover {
+    cursor: pointer;
+}
+
+.horizontal-rule {
+    border-bottom: 1px solid #ececec;
+    line-height: 0.1em;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+.horizontal-rule span {
+    background: #fff;
+    padding: 0 15px;
+}
+
+.terms-text {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    margin-bottom: 60px;
+}
+
+
+/* Login & Apps */
+.login h2 {
+    display: inline-block;
+}
+
+.login,
+.apps {
+    color: #222;
+    font-size: 0.9em;
+}
+
+.apps {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+.apps h2 {
+    margin-bottom: 25px;
+}
+
+.store-links img {
+    height: 40px;
+}
+
+.phone {
+    display: none;
+}
+
+/* Footer */
+.main-footer {
+    font-size: 0.7rem;
+}
+.main-footer nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    line-height: 2;
+}
+
+.main-footer nav a {
+    margin-right: 10px;
+    text-transform: uppercase;
+    color: #02376b;
+    font-weight: 700;
+}
+
+.copyright {
+    margin: 5px;
+    font-size: 0.9rem;
+}
+
+
+/*****************
+ ** Media Rules **
+ *****************/
+
+/* Tablet */
+@media (min-width: 450px) {
+
+    body {
+        margin-top: 45px;
+    }
+
+    h1 {
+        margin-top: 0px;
+    }
+
+    .center {
+        max-width: 350px;
+    }
+
+    .pad {
+        padding: 20px 30px;
+    }
+
+    input {
+        background-color: #f9f9f9;
+    }
+
+    .terms-text {
+        margin-bottom: 40px;
+    }
+
+    .outline {
+        border: 1px solid #e4e1e1;
+        margin-bottom: 10px;
+        background-color: #fff;
+    }
+
+    .main-footer {
+        padding: 0; 
+        font-size: 0.75rem;
+    }
+}
+
+
+/* Desktop */
+@media (min-width: 875px) {
+
+    .center {
+        width: 100%;
+    }
+
+    .apps {
+        width: 100%;
+    }
+
+    .phone {
+        display: block;
+        background-image: url("images/phone.png");
+        background-repeat: no-repeat;
+        width: 454px;
+        height: 618px;
+        position: relative;
+    }
+
+    .phone img {
+        position: relative;
+        top: 100px;
+        left: 151px;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    main .wrap:last-child {
+        order: -1;
+        margin-left: auto;
+        margin-bottom: 90px;
+        margin-right: -20px;
+    }
+
+    main .wrap:first-child {
+        margin-right: auto;
+        margin-left: -20px;
+    }
+
+    .main-footer {
+        margin: 40px 15px 25px 15px;
+    }
+
+    .main-footer .center {
+        margin: 0 auto;;
+        display: flex;
+        justify-content: space-between;
+        max-width: 900px;
+    }
+
+    .main-footer-nav {
+        flex-shrink: 0;
+    }
+
+    .main-footer nav a {
+        margin-right: 12px;
+    }
+
+    .copyright {
+        margin: 0;
+    }
+}

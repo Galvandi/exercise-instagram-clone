@@ -1,8 +1,0 @@
-Breakpoints:
-mobile
-min-width: 450px tablet
-min-width: 875px desktop
-
-used fonts: 
-h1 logo: actually a font called Billabong but using google font "Merienda One"
-content: Segoe UI but I am using google font "Roboto".

@@ -1,4 +1,4 @@
-# Propulsion Pre-work Exercise: Clone the page of Instagram ([Demo](https://galvandi.github.io/exercise-instagram-clone/))
+# Propulsion Pre-work Exercise: Clone the page of Instagram ([Demo](https://andreas-schoch.github.io/exercise-instagram-clone/))
 
 Practice HTML & CSS by rebuilding the landing page of Instagram.
 
